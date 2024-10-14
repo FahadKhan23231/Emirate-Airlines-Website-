@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emirates</title>
+    <link rel="stylesheet" href="Status.css">
+</head>
+
+<body>
+    <div class="Section1">
+        <h1>Emirates tracking</h1>
+        <h2>Track your plane by emirates id</h2>
+    </div>
+    <div class="form">
+        <label for="dept">Departure Airport</label>
+        <br>
+        <input class="a1" type="text" placeholder="Deprt airport">
+        <br>
+        <label for="Arival Airport">Arrival Airport</label>
+        <input class="a2" type="text" placeholder="Arrival airport">
+        <br>
+        <label>Country of Arrival</label>
+        <br>
+        <input type="text" placeholder="Country Name" autofocus="" list="names">
+        <datalist id="names">
+        <option>pakistan</option>
+        <option>India</option>
+        <option>England</option>
+        <option>Usa</option>
+        <option>uae</option>
+        <option>saudia arab</option>
+        <option>china</option>
+       </datalist>
+        <br>
+        <label>
+        Plane Id
+       </label>
+        <br>
+        <input type="text" placeholder="Plane_id" required="">
+        <br>
+        <button onclick="test()">Search</button>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13275.660302183896!2d73.04858951521874!3d33.71114634866705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfbb4fea39df%3A0x86d574adb4a1778!2sEmirates%20office!5e0!3m2!1sen!2s!4v1728151086466!5m2!1sen!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</body>
+<script>
+    function test() {
+        alert("Finding Your Flight");
+    }
+</script>
+
+</html>

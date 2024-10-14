@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emirates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMd2P4mC0g7B0Vx+ffP5n79pD8pHb0rC6YX0Jw" crossorigin="anonymous">
+
+    <style>
+        .a {
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+            background-color: grey;
+        }
+        
+        marquee {
+            color: red;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+            background-color: white;
+            height: 30px;
+        }
+        
+        .logo {
+            width: 10%;
+            border-radius: 50%;
+            margin-left: 90%;
+        }
+        
+        .login {
+            text-align: center;
+            margin-top: 10px;
+            background-color: white;
+            width: 200px;
+            height: 120px;
+            margin-left: 290px;
+            box-shadow: 5px 5px 5px 5px;
+        }
+        
+        .click {
+            width: 150px;
+            margin-top: 10px;
+            color: red;
+            background-color: white;
+            font-size: 20px;
+        }
+        
+        .image-container {
+            position: relative;
+            width: 750px;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: red;
+            font-size: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* Optional shadow for better visibility */
+        }
+        
+        .text-overlay:hover {
+            text-decoration: underline;
+            font-size: 40px;
+            border: 4px solid black;
+        }
+        
+        .sub {
+            width: 100%;
+            height: 200px;
+            margin-top: 10px;
+        }
+        
+        .a1 {
+            text-align: center;
+            margin-left: 250px;
+            margin-top: 100px;
+            height: 30px;
+            cursor: pointer;
+        }
+        
+        button {
+            font-size: 10px;
+            margin-left: 20px;
+            display: inline-block;
+            outline: 0;
+            border: 0;
+            cursor: pointer;
+            will-change: box-shadow, transform;
+            background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100%);
+            box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+            padding: 0 2em;
+            border-radius: 0.3em;
+            color: red;
+            height: 2.6em;
+            text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+            transition: box-shadow 0.15s ease, transform 0.15s ease;
+        }
+        
+        button:hover {
+            box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+            transform: translateY(-0.1em);
+        }
+        
+        button:active {
+            box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+            transform: translateY(0em);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <img class="logo" src="https://cdn.worldvectorlogo.com/logos/emirates-airlines-1.svg">
+        <marquee>Welcome To Emirates Help Centre</marquee>
+        <form class="login">
+            Email:
+            <input type="email" placeholder="Email" required>
+            <br> Password:
+            <input type="password" placeholder="Password" required>
+            <br>
+            <button onclick="event()" class="click">Login</button>
+
+        </form>
+    </div>
+    <div class="image-container">
+        <img class="img2" src="https://i.ytimg.com/vi/4ryaTsBryuI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBgO_8EK824fEB33s3ujSlAS7js-w" alt="Emirates Image">
+        <div class="text-overlay">How Can We Help ?</div>
+    </div>
+    <div class="sub">
+        <form>
+            <input class="a1" type="text" placeholder="Your Complain" required="">
+            <button onclick="find()">Help
+</button>
+        </form>
+
+    </div>
+
+
+</body>
+<script>
+    function event() {
+        console.log("Login Confirmed");
+    }
+
+    function find() {
+        console.log("Finding Best Help")
+    }
+</script>
+
+</html>
